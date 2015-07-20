@@ -41,6 +41,7 @@ function rsp_img_shortcode( $atts ) {
     // get our attributes from the shortcode
     extract(shortcode_atts(array(
         'align' => '',
+        'class' => '',
         'id' =>'',
         'size' => '',
     ), $atts));
@@ -87,7 +88,7 @@ function rsp_img_shortcode( $atts ) {
 
     // generate the html of the image. we're adding our classes, and, if there's no caption,
     // we're adding a post-img-no-caption class for styling
-    $rsp_img_html = '<img class="post-img'.(!empty($align) ? ' align-'.$align : '').(!empty($size) ? ' size-'.$size : '').(empty($caption) ? ' post-img-no-caption' : '').'"
+    $rsp_img_html = '<img class="post-img'.(!empty($class) ? ' '.$class : '').(!empty($align) ? ' align-'.$align : '').(!empty($size) ? ' size-'.$size : '').(empty($caption) ? ' post-img-no-caption' : '').'"
                         sizes="'.$img_sizes.'"
                         srcset="'.$img_retina[0].' '.$img_retina[1].'w,'.
                                 $img_lrg[0].' '.$img_lrg[1].'w,'.
