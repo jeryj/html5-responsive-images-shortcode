@@ -1,7 +1,7 @@
 <?php
    /*
    Plugin Name: HTML5 Responsive Image Shortcode for the WP Editor
-   Plugin URI: http://www.messengerpigeons.com
+   Plugin URI: http://jeremyjon.es
    Description: Replace WordPress's default "add media" button output with a resonsive image shortcode.
    Version: 1.0
    Author: Jerry Jones
